@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloLogin.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div id="img-row" class="col img-row d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+            <div class="col w-75 p-5 rounded">
+                <div class="text-center">
+                    <img src="./img/logo.png" width="150" alt="">
+                </div>
+                <h2 class="fw-bold text-center pt-5 mb-5">Iniciar Sesion</h2>
+                <form action="main.html" method="POST">
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-bolder fs-5">Correo Electonico</label>
+                        <input type="email" class="form-control p-3" name="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-bolder fs-5">Contraseña</label>
+                        <input type="password" class="form-control p-3" name="password" required>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="recordarPass" class="form-check-input mt-2" id="recordarPass">
+                        <label for="recordarPass" class="form-check fs-5"> Recordar contraseña</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary p-3 fs-4 text-center">Iniciar Sesion</button>
+                    </div>
+                    <div class="my-3 align-items-lg-baseline text-center">
+                        <span class="me-3"><a href="#">¿Olvidaste tu Contraseña?</a></span>
+                        <span class="ms-3">¿No tienes Cuenta? <a href="#">¡Registrate!</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
